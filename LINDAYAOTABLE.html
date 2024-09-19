@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TABLE</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: rgb(255, 0, 140);
+            color: rgb(0, 0, 0);
+            cursor: pointer;
+        }
+        tbody tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        tbody tr:hover {
+            background-color: #ff00b3;
+        }
+        .filter-input {
+            margin-bottom: 12px;
+            padding: 8px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        .highlighted {
+            background-color: #f50997 !important; /* Highlight color */
+        }
+    </style>
+</head>
+<body>
+    <center>
+    <body background="Miku.png"></body>
+        <h1 style="color: rgb(1, 17, 46);">UNIVERSIT OF CEBU PARDO-TALISAY CAMPUS</h1>
+        <p style="color: rgb(17, 80, 207);"> BSIT-1B STUDENT INFORMATION </p>
+        <p style="color: rgb(3, 188, 255);">College of Computer Studies</p>
+        <br>
+        <hr>
+    </center>
+    <input type="text" id="filterInput" class="filter-input" placeholder="Search for names..">
+
+    <table id="dataTable">
+        <thead>
+            <tr style="background-color: rgb(0, 0, 0);">
+                <th onclick="sortTable(0)">NUMBER</th>
+                <th onclick="sortTable(1)">COMPLETE NAME</th>
+                <th onclick="sortTable(2)">BIRTH DATE</th>
+                <th onclick="sortTable(3)">AGE</th>
+                <th onclick="sortTable(4)">CONTACT NUMBER</th>
+                <th onclick="sortTable(5)">EMAIL ADDRESS</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Mike A Lindayao</td>
+                <td>June 5, 2006</td>
+                <td>18</td>
+                <td>123</td>
+                <td>mikelindayaogwapo@gmail.com</td>
+            </tr>
+            <td>2</td>
+                <td>Kashimir Jaz G. Siton</td>
+                <td>January 3, 2006</td>
+                <td>18</td>
+                <td>123</td>
+                <td>rimurosenpai@gmail.com</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Ashley Missy G. Paran</td>
+                <td>July 21, 2006</td>
+                <td> 18 </td>
+                <td>123</td>
+                <td>AshlotMp@gmail.com</td>
+            </tr>
+        <tr>
+                <td>4</td>
+                <td>Clark Perjimson</td>
+                <td>April 15 2006</td>
+                <td> 18 </td>
+                <td>123</td>
+                <td>Clarkiyuki@gmail.com</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Jann vincent l. aranas </td>
+                <td>December 16,2005</td>
+                <td> 18 </td>
+                <td>123</td>
+                <td>rimurosenpai@gmail.com</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>Mary Faith Alicaway</td>
+                <td>September 23,2006</td>
+                <td> 17 </td>
+                <td>123</td>
+                <td>alicawaymaryfaith@gmail.com</td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>Jyan Patrick B. Sanchez</td>
+                <td>November 6, 2005</td>
+                <td> 18 </td>
+                <td>123</td>
+                <td>jyansanchez15@gmail.com</td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td>Angelica P. Borromeo </td>
+                <td>September 22, 2004</td>
+                <td> 19 </td>
+                <td>123</td>
+                <td>angelicaparazborromeo@gmail.com</td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td>Keith Enjambre </td>
+                <td>June, 27, 2006</td>
+                <td> 18 </td>
+                <td>123</td>
+                <td>enjambrekeith27@gmail.com</td>
+            </tr>
+            <tr>
+                <td>10</td>
+                <td>Adrian Luiz C, Rizzal </td>
+                <td>September 10,2005</td>
+                <td>19</td>
+                <td>123</td>
+                <td>snowangel543@gmail.com</td>
+            </tr>
+            <tr></tr>
+                <td>11</td>
+                <td>John christian p. lopez</td>
+                <td>October 4,2006</td>
+                <td> 17</td>
+                <td>123</td>
+                <td>ljonhnchristian75@gmail.com</td>
+            </tr>
+            <tr>
+                <td>12</td>
+                <td>Shyriel Arcala </td>
+                <td>October 10, 2005</td>
+                <td> 18 </td>
+                <td>123</td>
+                <td>shyrielarcala979@gmail.com</td>
+            </tr>
+            <tr>
+                <td>13</td>
+                <td> Ezekiel C. Hayahay </td>
+                <td>April 17, 2006</td>
+                <td> 18 </td>
+                <td>123</td>
+                <td>ekel172006@gmail.com</td>
+            </tr>
+            <tr></tr>
+                <td>14</td>
+                <td>Lexer Clyde M. Compuesto</td>
+                <td>March 14, 2000</td>
+                <td> 24 </td>
+                <td>123</td>
+                <td>Lexercomp@gmail.com</td>
+            </tr>
+            <tr>
+                <td>15</td>
+                <td>Eric O. dejan</td>
+                <td>November 29,2001</td>
+                <td> 22</td>
+                <td>123</td>
+                <td>jairramaidden@gmail.com</td>
+            </tr>
+            <tr>
+                <td>16</td>
+                <td>King Aldwin B. Sereno </td>
+                <td>May 11,2006</td>
+                <td> 18 </td>
+                <td>123</td>
+                <td>kingsereno98@gmail.com</td>
+            </tr>
+            <tr>
+                <td>17</td>
+                <td>Elisiha C. De Los Reyes</td>
+                <td>December 18,2005</td>
+                <td> 18 </td>
+                <td>123</td>
+                <td>elisha.delosreyes.18@gmail.com</td>
+            </tr>
+            <tr>
+                <td>18</td>
+                <td>Angelie S. Perez</td>
+                <td>October 15,2006</td>
+                <td> 18 </td>
+                <td>123</td>
+                <td>angelieperez606@gmail.com</td>
+            </tr>
+            <tr>
+                <td>19</td>
+                <td>Jyan Patrick B. Sanches</td>
+                <td>November 6,2005</td>
+                <td> 18 </td>
+                <td>123</td>
+                <td>jyansanchez@gmail.com</td>
+            </tr>
+            <tr></tr>
+                <td>20</td>
+                <td>Cristian Jay Burlas </td>
+                <td>July 4,2005</td>
+                <td>19</td>
+                <td>123</td>
+                <td>cristianjayburlas1@gamil.com</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <script>
+        function sortTable(n) {
+            const table = document.getElementById('dataTable');
+            const rows = Array.from(table.querySelectorAll('tbody tr'));
+            const isAscending = table.querySelectorAll('th')[n].classList.toggle('asc');
+
+            rows.sort((rowA, rowB) => {
+                const cellA = rowA.cells[n].textContent.trim();
+                const cellB = rowB.cells[n].textContent.trim();
+                const valueA = isNaN(cellA) ? cellA : parseFloat(cellA);
+                const valueB = isNaN(cellB) ? cellB : parseFloat(cellB);
+                return (valueA > valueB ? 1 : -1) * (isAscending ? 1 : -1);
+            });
+
+            rows.forEach(row => table.querySelector('tbody').appendChild(row));
+        }
+
+        document.getElementById('filterInput').addEventListener('input', function() {
+            const filter = this.value.toUpperCase();
+            const rows = document.querySelectorAll('#dataTable tbody tr');
+            rows.forEach(row => {
+                const cells = row.getElementsByTagName('td');
+                let match = false;
+                for (let i = 0; i < cells.length; i++) {
+                    if (cells[i].textContent.toUpperCase().indexOf(filter) > -1) {
+                        match = true;
+                        break;
+                    }
+                }
+                row.style.display = match ? '' : 'none';
+            });
+        });
+
+        document.querySelectorAll('#dataTable tbody tr').forEach(row => {
+            row.addEventListener('click', function() {
+                document.querySelectorAll('#dataTable tbody tr').forEach(r => r.classList.remove('highlighted'));
+                this.classList.add('highlighted');
+            });
+        });
+    </script>
+</body>
+</html>
